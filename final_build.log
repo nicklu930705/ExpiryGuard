@@ -1,0 +1,41 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild build -project ExpiryGuard.xcodeproj -scheme ExpiryGuard -destination "platform=iOS Simulator,name=iPhone 17 Pro Max"
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'ExpiryGuard' in project 'ExpiryGuard' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/nicklu/.gemini/antigravity/scratch/ExpiryGuard/App/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 3c51549490c72da9828714454c709bc9
+Build description path: /Users/nicklu/Library/Developer/Xcode/DerivedData/ExpiryGuard-favksllnnbuhtxbyseqgexrzcfwt/Build/Intermediates.noindex/XCBuildData/3c51549490c72da9828714454c709bc9.xcbuilddata
+error: unable to attach DB: error: accessing build database "/Users/nicklu/Library/Developer/Xcode/DerivedData/ExpiryGuard-favksllnnbuhtxbyseqgexrzcfwt/Build/Intermediates.noindex/XCBuildData/build.db": database is locked Possibly there are two concurrent builds running in the same filesystem location.
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Building project ExpiryGuard with scheme ExpiryGuard
+(1 failure)

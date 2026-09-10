@@ -1,0 +1,57 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "E3B7D2F1-8A5B-4C9D-A1B2-C3D4E5F67890",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "64A1B2C3",
+      "localizations" : [
+        {
+          "description" : "一次性付費，永久解鎖無限追蹤數量",
+          "displayName" : "Pro 無限守護",
+          "locale" : "zh_Hant"
+        }
+      ],
+      "productID" : "com.expiryguard.pro.lifetime",
+      "referenceName" : "Pro Lifetime Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "zh_Hant",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "TWN",
+    "_storeKitErrors" : [
+      {
+        "enabled" : false,
+        "name" : "Load Products"
+      }
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

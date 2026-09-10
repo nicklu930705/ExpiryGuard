@@ -1,0 +1,44 @@
+# Xcode
+#
+# gitignore template for Xcode programs
+# website: https://bitbucket.org/mrloop/xcode.gitignore
+
+.DS_Store
+
+# Xcode project and workspace
+*.xcodeproj
+*.xcworkspace
+!default.xcworkspace
+
+# Build products
+build/
+DerivedData/
+
+# User-specific Xcode files
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# CocoaPods (if used)
+Pods/
+
+# Carthage (if used)
+Carthage/Build/
+Carthage/Checkouts/
+
+# Accidental crash logs / temp files
+*.crash
+*.tmp

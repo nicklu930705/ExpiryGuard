@@ -1,0 +1,80 @@
+name: ExpiryGuard
+
+packages:
+  AlertToast:
+    url: https://github.com/elai950/AlertToast.git
+    from: 1.3.9
+
+targets:
+  ExpiryGuard:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [App]
+    entitlements:
+      path: ExpiryGuard.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.lutsehsien.expiryguard.shared
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_NSCameraUsageDescription: "需要使用相機來掃描到期日"
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "需要存取相簿來選擇照片辨識到期日"
+        INFOPLIST_KEY_CFBundleDisplayName: "效期守護"
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        PRODUCT_BUNDLE_IDENTIFIER: com.lutsehsien.expiryguard
+      debug:
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+    dependencies:
+      - package: AlertToast
+      - target: ExpiryGuardWidget
+        embed: true
+
+  ExpiryGuardWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widget
+    info:
+      path: Widget/Info.plist
+      properties:
+        CFBundleDisplayName: "效期守護 Widget"
+        CFBundleShortVersionString: 1.0.0
+        CFBundleVersion: "1"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        PRODUCT_BUNDLE_IDENTIFIER: com.lutsehsien.expiryguard.app.widget
+        CODE_SIGN_ENTITLEMENTS: Widget/ExpiryGuardWidget.entitlements
+        SWIFT_EMIT_LOC_STRINGS: YES
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME: WidgetBackground
+    entitlements:
+      path: Widget/ExpiryGuardWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.lutsehsien.expiryguard.shared
+
+schemes:
+  ExpiryGuard:
+    build:
+      targets:
+        ExpiryGuard: all
+        ExpiryGuardWidget: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
