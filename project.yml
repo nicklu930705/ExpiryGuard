@@ -24,8 +24,13 @@ targets:
         INFOPLIST_KEY_NSCameraUsageDescription: "需要使用相機來掃描到期日"
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "需要存取相簿來選擇照片辨識到期日"
         INFOPLIST_KEY_CFBundleDisplayName: "效期守護"
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait"
         MARKETING_VERSION: 1.0.0
-        CURRENT_PROJECT_VERSION: 1
+        CURRENT_PROJECT_VERSION: 2
         PRODUCT_BUNDLE_IDENTIFIER: com.lutsehsien.expiryguard
       debug:
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
@@ -50,8 +55,8 @@ targets:
     settings:
       base:
         MARKETING_VERSION: 1.0.0
-        CURRENT_PROJECT_VERSION: 1
-        PRODUCT_BUNDLE_IDENTIFIER: com.lutsehsien.expiryguard.app.widget
+        CURRENT_PROJECT_VERSION: 2
+        PRODUCT_BUNDLE_IDENTIFIER: com.lutsehsien.expiryguard.widget
         CODE_SIGN_ENTITLEMENTS: Widget/ExpiryGuardWidget.entitlements
         SWIFT_EMIT_LOC_STRINGS: YES
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor

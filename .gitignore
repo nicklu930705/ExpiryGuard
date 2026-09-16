@@ -5,14 +5,21 @@
 
 .DS_Store
 
-# Xcode project and workspace
-*.xcodeproj
-*.xcworkspace
-!default.xcworkspace
+# Xcode project and workspace (track project files, ignore user state)
+!*.xcodeproj
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata
+*.xcuserdata
+xcuserdata/
 
-# Build products
+# Build products & logs
 build/
+Build/
 DerivedData/
+*.log
 
 # User-specific Xcode files
 xcuserdata/

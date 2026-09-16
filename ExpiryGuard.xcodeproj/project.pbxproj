@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0762CD749B785B0306684A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79DCE31139E63F588521715 /* Assets.xcassets */; };
+		090342519909AFB690D53BE0 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7732D39C320D1F6C28D2DF03 /* StoreManager.swift */; };
+		0B393800B2C753E62C7EDFA5 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF107028930DFD48DB86EF04 /* CameraScannerView.swift */; };
+		0F9657D57CA364A67589A65A /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034A9F766B9337D04B649FE /* ArchiveView.swift */; };
+		27436EF8F363E421722478F9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213619D1CB16E2A3AA280007 /* NotificationService.swift */; };
+		30873B78E39759E42238502A /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EFA4383CDA0820A193959 /* DashboardViewModel.swift */; };
+		32E00A61B99CF5179260499B /* QuickAddSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98DD6BAB9A95E4B675574E9 /* QuickAddSheet.swift */; };
+		34EC165F340DF5A3FC631807 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7D5FADD5448652B53EDF8 /* OCRService.swift */; };
+		3E6D452D18F9501ACD06AC78 /* ExpiryGuardWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 78F9A7A1C3D446492072E06A /* ExpiryGuardWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		464624C96B8C3EF2172BBA12 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C24270D11A9B3EB9F41BD59 /* DateHelpers.swift */; };
+		4F4B1BE8FD3A3E96282F9F36 /* StoreKit.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F22AB58917660333E7FED167 /* StoreKit.storekit */; };
+		503C494B5F883D294AD58CC2 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = C485E26F311F486750047D38 /* AlertToast */; };
+		505728E711F8850824C94CA0 /* StatusCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DBE4CB16CB366A5BD2EB39 /* StatusCardView.swift */; };
+		533A7B73D9E8A1475CF71EE3 /* OCRResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663626EDD056F14BF052E44A /* OCRResultView.swift */; };
+		6BBCBDDDB9E57ED3EA833F6E /* ArchivedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D499550453CDD734B195FE9 /* ArchivedItem.swift */; };
+		74D401E426DA4831E4F7577F /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9733CAEC1CD45C0C9BF2F6 /* SharedConstants.swift */; };
+		8DC0C1240BDB1D1F04F56F81 /* ExpiryWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D849093C0FE58C6E10570AEE /* ExpiryWidgetBundle.swift */; };
+		AF226B011E67AC858E2314B7 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D280794D0C9B9F0C7EC21A /* SharedConstants.swift */; };
+		B1DE67FCD315AC81BCFBC6FF /* ExpiryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2FBB83FB30E1468E0D2E4 /* ExpiryWidget.swift */; };
+		B52E5DFA5E5CEFE2A4C650C8 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DB2DBAD3BCBB70CCB0FC0 /* ItemCategory.swift */; };
+		C0304D4694706A1616C44BCB /* TrackedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FEEAAC16E281EEC115E5D7 /* TrackedItem.swift */; };
+		C4A759A4647FBF158431405D /* CategoryPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA197BA97BA2AB1C686D2231 /* CategoryPill.swift */; };
+		C4EA35A51000FD2BAEAC044F /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B2FE773593ABBB10222F76 /* ItemCardView.swift */; };
+		CEC21A571468C3D09C9684B8 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AF9621C2D6FCD70DC12D5 /* PaywallView.swift */; };
+		D4DDEBE15676C795895C7C58 /* ExpiryGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5101590434D41F353A024AB /* ExpiryGuardApp.swift */; };
+		D4F5F3397F60044FAB142CC5 /* EditReminderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33AA3AE6A436EBBF4562131 /* EditReminderSheet.swift */; };
+		DAEF10EE93D54D886DD100F3 /* RadarDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09289B3A0B5BDDF36A6EC1EF /* RadarDashboardView.swift */; };
+		F376F95C8E330269AFD99778 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445F2B89AE66C2655C4371C /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C78D08AA3B546A1B68EC3473 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A40ADD7592F347FF135BA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A97E59FE2230ADBDF966668;
+			remoteInfo = ExpiryGuardWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F9DAD4A574D78D8B8520AB6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3E6D452D18F9501ACD06AC78 /* ExpiryGuardWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		026AF9621C2D6FCD70DC12D5 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		09289B3A0B5BDDF36A6EC1EF /* RadarDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarDashboardView.swift; sourceTree = "<group>"; };
+		213619D1CB16E2A3AA280007 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		21CD8414661EF8A8245D91F6 /* ExpiryGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpiryGuard.entitlements; sourceTree = "<group>"; };
+		25F95C60AD8C9E313E1EE45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31DBE4CB16CB366A5BD2EB39 /* StatusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCardView.swift; sourceTree = "<group>"; };
+		36FEEAAC16E281EEC115E5D7 /* TrackedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedItem.swift; sourceTree = "<group>"; };
+		37D280794D0C9B9F0C7EC21A /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		3C24270D11A9B3EB9F41BD59 /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		54B2FE773593ABBB10222F76 /* ItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
+		54CD2CEC8AC6ACB3A16A41D1 /* ExpiryGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpiryGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BAAF03A6348C32F6F42DC50 /* ExpiryGuardWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpiryGuardWidget.entitlements; sourceTree = "<group>"; };
+		5D499550453CDD734B195FE9 /* ArchivedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedItem.swift; sourceTree = "<group>"; };
+		5E9733CAEC1CD45C0C9BF2F6 /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		663626EDD056F14BF052E44A /* OCRResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRResultView.swift; sourceTree = "<group>"; };
+		67D7D5FADD5448652B53EDF8 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		7732D39C320D1F6C28D2DF03 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		78F9A7A1C3D446492072E06A /* ExpiryGuardWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExpiryGuardWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		993EFA4383CDA0820A193959 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		A5101590434D41F353A024AB /* ExpiryGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryGuardApp.swift; sourceTree = "<group>"; };
+		A67DB2DBAD3BCBB70CCB0FC0 /* ItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
+		A98DD6BAB9A95E4B675574E9 /* QuickAddSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddSheet.swift; sourceTree = "<group>"; };
+		B79DCE31139E63F588521715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA197BA97BA2AB1C686D2231 /* CategoryPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPill.swift; sourceTree = "<group>"; };
+		BBD2FBB83FB30E1468E0D2E4 /* ExpiryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryWidget.swift; sourceTree = "<group>"; };
+		CF107028930DFD48DB86EF04 /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
+		D034A9F766B9337D04B649FE /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
+		D33AA3AE6A436EBBF4562131 /* EditReminderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReminderSheet.swift; sourceTree = "<group>"; };
+		D849093C0FE58C6E10570AEE /* ExpiryWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryWidgetBundle.swift; sourceTree = "<group>"; };
+		E445F2B89AE66C2655C4371C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F22AB58917660333E7FED167 /* StoreKit.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKit.storekit; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25E170CE2C8B0F5D9971B608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503C494B5F883D294AD58CC2 /* AlertToast in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017397435BF90DB672D09D7D /* QuickAdd */ = {
+			isa = PBXGroup;
+			children = (
+				CF107028930DFD48DB86EF04 /* CameraScannerView.swift */,
+				BA197BA97BA2AB1C686D2231 /* CategoryPill.swift */,
+				663626EDD056F14BF052E44A /* OCRResultView.swift */,
+				A98DD6BAB9A95E4B675574E9 /* QuickAddSheet.swift */,
+			);
+			path = QuickAdd;
+			sourceTree = "<group>";
+		};
+		23CA54813D193DF15024C319 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D499550453CDD734B195FE9 /* ArchivedItem.swift */,
+				36FEEAAC16E281EEC115E5D7 /* TrackedItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		418BA935BBD232BFDFDCC963 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				5BAAF03A6348C32F6F42DC50 /* ExpiryGuardWidget.entitlements */,
+				BBD2FBB83FB30E1468E0D2E4 /* ExpiryWidget.swift */,
+				D849093C0FE58C6E10570AEE /* ExpiryWidgetBundle.swift */,
+				25F95C60AD8C9E313E1EE45C /* Info.plist */,
+				5E9733CAEC1CD45C0C9BF2F6 /* SharedConstants.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		4CB22641420401FFB5B69882 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D33AA3AE6A436EBBF4562131 /* EditReminderSheet.swift */,
+				54B2FE773593ABBB10222F76 /* ItemCardView.swift */,
+				09289B3A0B5BDDF36A6EC1EF /* RadarDashboardView.swift */,
+				31DBE4CB16CB366A5BD2EB39 /* StatusCardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		5DE463E86FF8FF7B54BBBF74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A42CF4B11C87D0B5CD0E8C7D /* Archive */,
+				4CB22641420401FFB5B69882 /* Dashboard */,
+				9691305A1B859D8E6FFD19F8 /* Paywall */,
+				017397435BF90DB672D09D7D /* QuickAdd */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95F2248A81EE4B8F195A0DC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54CD2CEC8AC6ACB3A16A41D1 /* ExpiryGuard.app */,
+				78F9A7A1C3D446492072E06A /* ExpiryGuardWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9691305A1B859D8E6FFD19F8 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				026AF9621C2D6FCD70DC12D5 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		9F1F4E4F1F78457891691211 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E445F2B89AE66C2655C4371C /* ContentView.swift */,
+				21CD8414661EF8A8245D91F6 /* ExpiryGuard.entitlements */,
+				A5101590434D41F353A024AB /* ExpiryGuardApp.swift */,
+				23CA54813D193DF15024C319 /* Models */,
+				AAE044F600DC3F9D02FFC186 /* Resources */,
+				BA5500B677D80B444470B9C3 /* Services */,
+				C74406C72CD80F5191C0C37F /* Utilities */,
+				EF87427A285E7F4D1334E5D1 /* ViewModels */,
+				5DE463E86FF8FF7B54BBBF74 /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A42CF4B11C87D0B5CD0E8C7D /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				D034A9F766B9337D04B649FE /* ArchiveView.swift */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
+		AAE044F600DC3F9D02FFC186 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B79DCE31139E63F588521715 /* Assets.xcassets */,
+				F22AB58917660333E7FED167 /* StoreKit.storekit */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA5500B677D80B444470B9C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				213619D1CB16E2A3AA280007 /* NotificationService.swift */,
+				67D7D5FADD5448652B53EDF8 /* OCRService.swift */,
+				7732D39C320D1F6C28D2DF03 /* StoreManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C74406C72CD80F5191C0C37F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3C24270D11A9B3EB9F41BD59 /* DateHelpers.swift */,
+				A67DB2DBAD3BCBB70CCB0FC0 /* ItemCategory.swift */,
+				37D280794D0C9B9F0C7EC21A /* SharedConstants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EDC542D3AE67B73C1F1079CD = {
+			isa = PBXGroup;
+			children = (
+				9F1F4E4F1F78457891691211 /* App */,
+				418BA935BBD232BFDFDCC963 /* Widget */,
+				95F2248A81EE4B8F195A0DC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF87427A285E7F4D1334E5D1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				993EFA4383CDA0820A193959 /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A97E59FE2230ADBDF966668 /* ExpiryGuardWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4C9F8A08B36757DBB35CA5 /* Build configuration list for PBXNativeTarget "ExpiryGuardWidget" */;
+			buildPhases = (
+				BBF57BC5224D77AED0F51B5C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpiryGuardWidget;
+			packageProductDependencies = (
+			);
+			productName = ExpiryGuardWidget;
+			productReference = 78F9A7A1C3D446492072E06A /* ExpiryGuardWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B4B204B506679FD8B10E29CC /* ExpiryGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43BE2EB0145119C3F38DB2D /* Build configuration list for PBXNativeTarget "ExpiryGuard" */;
+			buildPhases = (
+				CD4A8ECE758A32364248322C /* Sources */,
+				9748980CCB51E4DEF2EBCF4F /* Resources */,
+				25E170CE2C8B0F5D9971B608 /* Frameworks */,
+				5F9DAD4A574D78D8B8520AB6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855FFAEE2E0BABA04DBA803C /* PBXTargetDependency */,
+			);
+			name = ExpiryGuard;
+			packageProductDependencies = (
+				C485E26F311F486750047D38 /* AlertToast */,
+			);
+			productName = ExpiryGuard;
+			productReference = 54CD2CEC8AC6ACB3A16A41D1 /* ExpiryGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9A40ADD7592F347FF135BA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 0858D3D42A6D18D111019AFA /* Build configuration list for PBXProject "ExpiryGuard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EDC542D3AE67B73C1F1079CD;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				004B751128D24C002D67A2C5 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 95F2248A81EE4B8F195A0DC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4B204B506679FD8B10E29CC /* ExpiryGuard */,
+				9A97E59FE2230ADBDF966668 /* ExpiryGuardWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9748980CCB51E4DEF2EBCF4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0762CD749B785B0306684A80 /* Assets.xcassets in Resources */,
+				4F4B1BE8FD3A3E96282F9F36 /* StoreKit.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBF57BC5224D77AED0F51B5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DE67FCD315AC81BCFBC6FF /* ExpiryWidget.swift in Sources */,
+				8DC0C1240BDB1D1F04F56F81 /* ExpiryWidgetBundle.swift in Sources */,
+				74D401E426DA4831E4F7577F /* SharedConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4A8ECE758A32364248322C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9657D57CA364A67589A65A /* ArchiveView.swift in Sources */,
+				6BBCBDDDB9E57ED3EA833F6E /* ArchivedItem.swift in Sources */,
+				0B393800B2C753E62C7EDFA5 /* CameraScannerView.swift in Sources */,
+				C4A759A4647FBF158431405D /* CategoryPill.swift in Sources */,
+				F376F95C8E330269AFD99778 /* ContentView.swift in Sources */,
+				30873B78E39759E42238502A /* DashboardViewModel.swift in Sources */,
+				464624C96B8C3EF2172BBA12 /* DateHelpers.swift in Sources */,
+				D4F5F3397F60044FAB142CC5 /* EditReminderSheet.swift in Sources */,
+				D4DDEBE15676C795895C7C58 /* ExpiryGuardApp.swift in Sources */,
+				C4EA35A51000FD2BAEAC044F /* ItemCardView.swift in Sources */,
+				B52E5DFA5E5CEFE2A4C650C8 /* ItemCategory.swift in Sources */,
+				27436EF8F363E421722478F9 /* NotificationService.swift in Sources */,
+				533A7B73D9E8A1475CF71EE3 /* OCRResultView.swift in Sources */,
+				34EC165F340DF5A3FC631807 /* OCRService.swift in Sources */,
+				CEC21A571468C3D09C9684B8 /* PaywallView.swift in Sources */,
+				32E00A61B99CF5179260499B /* QuickAddSheet.swift in Sources */,
+				DAEF10EE93D54D886DD100F3 /* RadarDashboardView.swift in Sources */,
+				AF226B011E67AC858E2314B7 /* SharedConstants.swift in Sources */,
+				505728E711F8850824C94CA0 /* StatusCardView.swift in Sources */,
+				090342519909AFB690D53BE0 /* StoreManager.swift in Sources */,
+				C0304D4694706A1616C44BCB /* TrackedItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		855FFAEE2E0BABA04DBA803C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A97E59FE2230ADBDF966668 /* ExpiryGuardWidget */;
+			targetProxy = C78D08AA3B546A1B68EC3473 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33F15D90F997487D905589C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ExpiryGuard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "效期守護";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要使用相機來掃描到期日";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "需要存取相簿來選擇照片辨識到期日";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lutsehsien.expiryguard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41F58F39520F85EF7B80556A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget/ExpiryGuardWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 2;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lutsehsien.expiryguard.widget;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		630B0B3F1581FA61BBC77047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H8CHLX3DN6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		702563EBC18E910F1ECEB6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ExpiryGuard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "效期守護";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要使用相機來掃描到期日";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "需要存取相簿來選擇照片辨識到期日";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lutsehsien.expiryguard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A4A9FF9EA159138CB461A8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget/ExpiryGuardWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 2;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lutsehsien.expiryguard.widget;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A290EE293BDFBAC660B632EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H8CHLX3DN6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0858D3D42A6D18D111019AFA /* Build configuration list for PBXProject "ExpiryGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A290EE293BDFBAC660B632EB /* Debug */,
+				630B0B3F1581FA61BBC77047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E4C9F8A08B36757DBB35CA5 /* Build configuration list for PBXNativeTarget "ExpiryGuardWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F58F39520F85EF7B80556A /* Debug */,
+				8A4A9FF9EA159138CB461A8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F43BE2EB0145119C3F38DB2D /* Build configuration list for PBXNativeTarget "ExpiryGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				702563EBC18E910F1ECEB6D2 /* Debug */,
+				33F15D90F997487D905589C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		004B751128D24C002D67A2C5 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C485E26F311F486750047D38 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 004B751128D24C002D67A2C5 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9A40ADD7592F347FF135BA2 /* Project object */;
+}

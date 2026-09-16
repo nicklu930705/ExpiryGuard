@@ -9,7 +9,10 @@ final class StoreManager {
     // MARK: - Constants
     
     static let shared = StoreManager()
-    static let lifetimeProductID = "com.expiryguard.pro.lifetime"
+    static let productIDs: Set<String> = [
+        "com.lutsehsien.expiryguard.pro.lifetime",
+        "com.expiryguard.pro.lifetime"
+    ]
     static let freeItemLimit = 5
     
     // MARK: - Published State
@@ -17,6 +20,7 @@ final class StoreManager {
     private(set) var products: [Product] = []
     private(set) var hasUnlockedPro: Bool = ProcessInfo.processInfo.arguments.contains("-screenshot-pro")
     private(set) var isPurchasing: Bool = false
+    private(set) var lastErrorMessage: String? = nil
     
     // MARK: - Private
     
@@ -36,9 +40,16 @@ final class StoreManager {
     /// 從 App Store 載入產品資訊
     func fetchProducts() async {
         do {
-            products = try await Product.products(for: [Self.lifetimeProductID])
+            let fetched = try await Product.products(for: Self.productIDs)
+            self.products = fetched
+            if fetched.isEmpty {
+                self.lastErrorMessage = "找不到產品資訊（請確認 App Store Connect 已建立內購項目且付費協議有效）"
+            } else {
+                self.lastErrorMessage = nil
+            }
         } catch {
             print("[StoreManager] 載入產品失敗: \(error)")
+            self.lastErrorMessage = error.localizedDescription
         }
     }
     
@@ -49,8 +60,9 @@ final class StoreManager {
             await fetchProducts()
         }
         
-        guard let product = products.first(where: { $0.id == Self.lifetimeProductID }) else {
-            throw StoreError.productNotFound
+        guard let product = products.first(where: { Self.productIDs.contains($0.id) }) else {
+            let errorMsg = lastErrorMessage ?? "找不到產品資訊（請檢查 App Store Connect 內購設定）"
+            throw StoreError.productNotFound(errorMsg)
         }
         
         isPurchasing = true
@@ -106,7 +118,7 @@ final class StoreManager {
         var isProActive = false
         for await result in Transaction.currentEntitlements {
             if case .verified(let transaction) = result {
-                if transaction.productID == Self.lifetimeProductID
+                if Self.productIDs.contains(transaction.productID)
                     && transaction.revocationDate == nil {
                     isProActive = true
                 }
@@ -130,11 +142,11 @@ final class StoreManager {
 // MARK: - Errors
 
 enum StoreError: LocalizedError {
-    case productNotFound
+    case productNotFound(String)
     
     var errorDescription: String? {
         switch self {
-        case .productNotFound: return "找不到產品資訊"
+        case .productNotFound(let message): return message
         }
     }
 }

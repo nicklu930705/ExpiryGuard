@@ -143,6 +143,9 @@ struct PaywallView: View {
                     .padding(.bottom)
             }
         }
+        .task {
+            await StoreManager.shared.fetchProducts()
+        }
     }
     
     private func benefitRow(text: LocalizedStringKey) -> some View {
